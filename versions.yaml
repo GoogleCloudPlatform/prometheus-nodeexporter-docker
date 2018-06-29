@@ -1,0 +1,45 @@
+# Copyright 2018 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#      http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+_variables:
+  from: &from gcr.io/google-appengine/debian9
+
+versions:
+  - dir: '0/debian9/0.16'
+    repo: prometheus-nodeexporter0
+    tags:
+      - '0.16.0'
+      - '0.16'
+      - '0'
+      - '0.16.0-debian9'
+      - '0.16-debian9'
+      - '0-debian9'
+      - 'latest'
+    from: *from
+    packages:
+      nodeexporter:
+        version: '0.16.0'
+        sha256: 'e92a601a5ef4f77cce967266b488a978711dabc527a720bea26505cba426c029'
+  - dir: '0/debian9/0.15'
+    repo: prometheus-nodeexporter0
+    tags:
+      - '0.15.2'
+      - '0.15'
+      - '0.15.2-debian9'
+      - '0.15-debian9'
+    from: *from
+    packages:
+      nodeexporter:
+        version: '0.15.2'
+        sha256: '1ce667467e442d1f7fbfa7de29a8ffc3a7a0c84d24d7c695cc88b29e0752df37'
