@@ -19,12 +19,12 @@ versions:
   - dir: '0/debian9/0.16'
     repo: prometheus-nodeexporter0
     tags:
-      - '0.16.0'
-      - '0.16'
-      - '0'
       - '0.16.0-debian9'
       - '0.16-debian9'
       - '0-debian9'
+      - '0.16.0'
+      - '0.16'
+      - '0'
       - 'latest'
     from: *from
     packages:
@@ -34,10 +34,10 @@ versions:
   - dir: '0/debian9/0.15'
     repo: prometheus-nodeexporter0
     tags:
-      - '0.15.2'
-      - '0.15'
       - '0.15.2-debian9'
       - '0.15-debian9'
+      - '0.15.2'
+      - '0.15'
     from: *from
     packages:
       nodeexporter:
