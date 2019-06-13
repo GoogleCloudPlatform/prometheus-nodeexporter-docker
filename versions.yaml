@@ -29,7 +29,7 @@ versions:
     from: *from
     packages:
       nodeexporter:
-        version: '0.18.0'
+        version: '0.18.1'
         sha256: 'b2503fd932f85f4e5baf161268854bf5d22001869b84f00fd2d1f57b51b72424'
   - dir: '0/debian9/0.16'
     repo: prometheus-nodeexporter0
