@@ -3,6 +3,8 @@ FROM {{ .From }}
 {{- $nodeexporter := index .Packages "nodeexporter" }}
 ENV NODEEXPORTER_VERSION {{ $nodeexporter.Version }}
 
+ENV C2D_RELEASE=${NODEEXPORTER_VERSION}
+
 ENV NODEEXPORTER_URL="https://github.com/prometheus/node_exporter/releases/download/v$NODEEXPORTER_VERSION/node_exporter-$NODEEXPORTER_VERSION.linux-amd64.tar.gz"
 ENV NODEEXPORTER_SHA256 {{ $nodeexporter.Sha256 }}
 
