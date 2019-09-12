@@ -1,6 +1,8 @@
 FROM gcr.io/google-appengine/debian9
 ENV NODEEXPORTER_VERSION 0.18.1
 
+ENV C2D_RELEASE=${NODEEXPORTER_VERSION}
+
 ENV NODEEXPORTER_URL="https://github.com/prometheus/node_exporter/releases/download/v$NODEEXPORTER_VERSION/node_exporter-$NODEEXPORTER_VERSION.linux-amd64.tar.gz"
 ENV NODEEXPORTER_SHA256 b2503fd932f85f4e5baf161268854bf5d22001869b84f00fd2d1f57b51b72424
 
