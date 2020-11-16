@@ -16,6 +16,31 @@ _variables:
   from: &from gcr.io/google-appengine/debian9
 
 versions:
+  - dir: '1/debian9/1.0.1'
+    repo: prometheus-nodeexporter1
+    tags:
+      - '1.0.1-debian9'
+      - '1.0-debian9'
+      - '1-debian9'
+      - '1.0.1'
+      - '1.0'
+      - '1'
+      - 'latest'
+    from: *from
+    packages:
+      nodeexporter:
+        version: '1.0.1'
+        sha256: '3369b76cd2b0ba678b6d618deab320e565c3d93ccb5c2a0d5db51a53857768ae'
+  - dir: '1/debian9/1.0.0'
+    repo: prometheus-nodeexporter1
+    tags:
+      - '1.0.0-debian9'
+      - '1.0.0'
+    from: *from
+    packages:
+      nodeexporter:
+        version: '1.0.0'
+        sha256: 'fae88be0aa33c8ae22340723f9b4a4e519e67d2969da7a27751e755db7e75788'
   - dir: '0/debian9/0.18'
     repo: prometheus-nodeexporter0
     tags:
@@ -25,7 +50,6 @@ versions:
       - '0.18.1'
       - '0.18'
       - '0'
-      - 'latest'
     from: *from
     packages:
       nodeexporter:
