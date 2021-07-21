@@ -1,4 +1,4 @@
-FROM gcr.io/google-appengine/debian9
+FROM marketplace.gcr.io/google/debian9
 ENV NODEEXPORTER_VERSION 1.0.1
 
 ENV C2D_RELEASE=${NODEEXPORTER_VERSION}
