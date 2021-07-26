@@ -1,10 +1,10 @@
 FROM marketplace.gcr.io/google/debian9
-ENV NODEEXPORTER_VERSION 1.0.0
+ENV NODEEXPORTER_VERSION 1.2.0
 
 ENV C2D_RELEASE=${NODEEXPORTER_VERSION}
 
 ENV NODEEXPORTER_URL="https://github.com/prometheus/node_exporter/releases/download/v$NODEEXPORTER_VERSION/node_exporter-$NODEEXPORTER_VERSION.linux-amd64.tar.gz"
-ENV NODEEXPORTER_SHA256 fae88be0aa33c8ae22340723f9b4a4e519e67d2969da7a27751e755db7e75788
+ENV NODEEXPORTER_SHA256 f7ef26fb10d143dc4211281d7a2e8b13c4fe1bd0d7abbdff6735a6efdb4b5e56
 
 RUN set -x && \
     apt-get update && apt-get install -qq -y wget && \
