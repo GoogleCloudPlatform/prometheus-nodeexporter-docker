@@ -16,21 +16,21 @@ _variables:
   from: &from marketplace.gcr.io/google/debian9
   
 versions:
-  - dir: '1/debian9/1.2.0'
+  - dir: '1/debian9/1.2.2'
     repo: prometheus-nodeexporter1
     tags:
-      - '1.2.0-debian9'
+      - '1.2.2-debian9'
       - '1.2-debian9'
       - '1-debian9'
-      - '1.2.0'
+      - '1.2.2'
       - '1.2'
       - '1'
       - 'latest'
     from: *from
     packages:
       nodeexporter:
-        version: '1.2.0'
-        sha256: 'f7ef26fb10d143dc4211281d7a2e8b13c4fe1bd0d7abbdff6735a6efdb4b5e56'
+        version: '1.2.2'
+        sha256: '344bd4c0bbd66ff78f14486ec48b89c248139cdd485e992583ea30e89e0e5390'
   - dir: '1/debian9/1.1.2'
     repo: prometheus-nodeexporter1
     tags:
