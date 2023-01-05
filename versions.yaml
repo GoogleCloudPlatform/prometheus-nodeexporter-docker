@@ -13,22 +13,22 @@
 # limitations under the License.
 
 _variables:
-  from: &from marketplace.gcr.io/google/debian9
+  from: &from marketplace.gcr.io/google/debian11
   
 versions:
-  - dir: '1/debian9/1.3.1'
+  - dir: '1/debian11/1.5.0'
     repo: prometheus-nodeexporter1
     tags:
-      - '1.3.1-debian9'
-      - '1.3-debian9'
-      - '1-debian9'
-      - '1.3.1'
-      - '1.3'
+      - '1.5.0-debian11'
+      - '1.5-debian11'
+      - '1-debian11'
+      - '1.5.0'
+      - '1.5'
       - '1'
       - 'latest'
     from: *from
     packages:
       nodeexporter:
-        version: '1.3.1'
-        sha256: '68f3802c2dd3980667e4ba65ea2e1fb03f4a4ba026cca375f15a0390ff850949'
+        version: '1.5.0'
+        sha256: 'af999fd31ab54ed3a34b9f0b10c28e9acee9ef5ac5a5d5edfdde85437db7acbb'
 
