@@ -7,7 +7,7 @@ ENV NODEEXPORTER_URL="https://github.com/prometheus/node_exporter/releases/downl
 ENV NODEEXPORTER_SHA256 af999fd31ab54ed3a34b9f0b10c28e9acee9ef5ac5a5d5edfdde85437db7acbb
 
 RUN set -x && \
-    apt-get update && apt-get install -qq -y wget openssl && \
+    apt-get update && apt-get install -qq -y wget openssl libtasn1-6 && \
     mkdir nodeexporter-files && cd nodeexporter-files && \
     wget -O nodeexporter.tar.gz "$NODEEXPORTER_URL" && \
     echo "$NODEEXPORTER_SHA256 nodeexporter.tar.gz" | sha256sum -c - && \
