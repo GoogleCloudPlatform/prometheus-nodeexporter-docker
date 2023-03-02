@@ -13,7 +13,7 @@
 # limitations under the License.
 
 _variables:
-  from: &from marketplace.gcr.io/google/debian11
+  from: &from marketplace.gcr.io/google/c2d-debian11
   
 versions:
   - dir: '1/debian11/1.5.0'
@@ -30,5 +30,4 @@ versions:
     packages:
       nodeexporter:
         version: '1.5.0'
-        sha256: 'af999fd31ab54ed3a34b9f0b10c28e9acee9ef5ac5a5d5edfdde85437db7acbb'
 
