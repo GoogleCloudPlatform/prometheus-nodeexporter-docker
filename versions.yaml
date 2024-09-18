@@ -1,4 +1,4 @@
-# Copyright 2023 Google LLC
+# Copyright 2024 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,22 +12,31 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-
 cloudbuild:
   enable_parallel: false
 versions:
-- dir: 1/debian11/1.6
-  from: marketplace.gcr.io/google/c2d-debian11
+- dir: 1/debian12/1.8
+  from: marketplace.gcr.io/google/debian12
+  packages:
+    nodeexporter:
+      version: 1.8.2
+  repo: prometheus-nodeexporter1
+  tags:
+  - 1.8.2-debian12
+  - 1.8-debian12
+  - 1-debian12
+  - 1.8.2
+  - '1.8'
+  - '1'
+  - latest
+- dir: 1/debian12/1.6
+  from: marketplace.gcr.io/google/debian12
   packages:
     nodeexporter:
       version: 1.6.1
   repo: prometheus-nodeexporter1
   tags:
-  - 1.6.1-debian11
-  - 1.6-debian11
-  - 1-debian11
+  - 1.6.1-debian12
+  - 1.6-debian12
   - 1.6.1
   - '1.6'
-  - '1'
-  - latest
-

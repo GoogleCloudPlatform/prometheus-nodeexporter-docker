@@ -1,4 +1,4 @@
-FROM marketplace.gcr.io/google/c2d-debian11
+FROM marketplace.gcr.io/google/debian12
 ENV NODEEXPORTER_VERSION 1.6.1
 
 ENV C2D_RELEASE=${NODEEXPORTER_VERSION}
