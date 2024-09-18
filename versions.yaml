@@ -15,7 +15,7 @@
 cloudbuild:
   enable_parallel: false
 versions:
-- dir: 1/debian12/1.6
+- dir: 1/debian12/1.8
   from: marketplace.gcr.io/google/debian12
   packages:
     nodeexporter:
