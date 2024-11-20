@@ -13,6 +13,7 @@
 # limitations under the License.
 
 cloudbuild:
+  docker_image: gcr.io/cloud-builders/docker:24.0.9
   enable_parallel: false
 versions:
 - dir: 1/debian12/1.8
@@ -21,6 +22,9 @@ versions:
     nodeexporter:
       version: 1.8.2
   repo: prometheus-nodeexporter1
+  annotations:
+  - key: com.googleapis.cloudmarketplace.product.service.name
+    value: services/0b86772a-0533-4aa1-aae2-d42fab2af63b.cloudpartnerservices.goog
   tags:
   - 1.8.2-debian12
   - 1.8-debian12
@@ -34,6 +38,9 @@ versions:
   packages:
     nodeexporter:
       version: 1.6.1
+  annotations:
+  - key: com.googleapis.cloudmarketplace.product.service.name
+    value: services/0b86772a-0533-4aa1-aae2-d42fab2af63b.cloudpartnerservices.goog
   repo: prometheus-nodeexporter1
   tags:
   - 1.6.1-debian12
