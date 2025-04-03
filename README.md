@@ -1,11 +1,4 @@
 prometheus-nodeexporter-docker
 ============
 
-Dockerfile source for Prometheus Node exporter [docker](https://docker.io) image.
-
-# Upstream
-This source repo was originally built based on:
-https://github.com/prometheus/node_exporter
-
-# Disclaimer
-This is not an official Google product.
+## This repository was moved to [Click-to-Deploy repo](https://github.com/GoogleCloudPlatform/click-to-deploy/tree/master/docker/prometheus-nodeexporter).
